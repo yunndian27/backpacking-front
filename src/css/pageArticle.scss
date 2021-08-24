@@ -1,0 +1,22 @@
+// article
+#article {
+  background: rgba($color: $secondary, $alpha: 0.2);
+  
+  .container {
+    width: 100%;
+    
+    padding: 1rem 1.8rem;
+  }
+
+}
+
+@media (min-width: $breakpoint-md) {
+  #article {
+    .container {
+      width: 80%;
+      margin: 60px 0;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-xl) {}

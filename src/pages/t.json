@@ -1,0 +1,137 @@
+{
+  "row": {
+    "showing": true,
+    "_id": "6117f0605c04a923080bda15",
+    "artTitle": "澎湖縣當地名產",
+    "description": "當地名產<div>媽宮黑糖糕系列食品。</div><div>三凱餅舖　60元　(06)9214742　馬公巿烏崁里103-3號</div><div>百年老店 頂好鹹餅　100元/包 份量重　(06)9272652 馬公巿重慶里民權路84-1號</div><div>泉利餅舖 馬公市民權路 素食鹹餅烘焙適當，口味較佳↓</div><div>正一 花生酥</div><div>大立花枝丸 06-9277701 澎湖縣馬公市新村路27號</div><div>明利冬瓜糕 澎湖縣白沙鄉港子村103號</div><div>水月堂黑糖糕</div><div>甘貝醬（XO醬）比較老的廠牌是高富甘貝醬（XO醬）</div><div>興鴻商行的甘貝醬（XO醬）較天然　250元　(06)9216423 0936-125607　馬公巿大仁街27號</div><div>盛興製餅廠</div><div>興盛製餅廠</div><div>佳佳味食品行</div><div>黑妞食品</div><div>媽宮食品電話06-9221123-5 一通電話宅配到家貨到付款</div><div>萬泰食品</div><div>仁品花枝丸</div><div>宏新海產行：澎湖縣馬公市民權路97號 ，電話：06-9276811<br><div><br></div></div>",
+    "image": "http://localhost:3000/files/1628958816892.jpg",
+    "type": "台灣",
+    "category": "飲食"
+  },
+  "pageIndex": 2,
+  "col": {
+    "name": "action",
+    "label": "編輯",
+    "field": "action",
+    "align": "center",
+    "__iconClass": "q-table__sort-icon q-table__sort-icon--center",
+    "__thClass": "text-center"
+  },
+  "cols": [
+    {
+      "name": "artTitle",
+      "label": "標題",
+      "align": "left",
+      "__iconClass": "q-table__sort-icon q-table__sort-icon--left",
+      "__thClass": "text-left"
+    },
+    {
+      "name": "description",
+      "label": "內容",
+      "align": "right",
+      "__iconClass": "q-table__sort-icon q-table__sort-icon--right",
+      "__thClass": "text-right"
+    },
+    {
+      "name": "type",
+      "label": "主題類型",
+      "field": "type",
+      "align": "center",
+      "__iconClass": "q-table__sort-icon q-table__sort-icon--center",
+      "__thClass": "text-center"
+    },
+    {
+      "name": "category",
+      "label": "分類",
+      "field": "category",
+      "align": "center",
+      "__iconClass": "q-table__sort-icon q-table__sort-icon--center",
+      "__thClass": "text-center"
+    },
+    {
+      "name": "image",
+      "label": "封面照片",
+      "field": "image",
+      "align": "center",
+      "__iconClass": "q-table__sort-icon q-table__sort-icon--center",
+      "__thClass": "text-center"
+    },
+    {
+      "name": "showing",
+      "label": "狀態",
+      "field": "showing",
+      "align": "right",
+      "__iconClass": "q-table__sort-icon q-table__sort-icon--right",
+      "__thClass": "text-right"
+    },
+    {
+      "name": "action",
+      "label": "編輯",
+      "field": "action",
+      "align": "center",
+      "__iconClass": "q-table__sort-icon q-table__sort-icon--center",
+      "__thClass": "text-center"
+    }
+  ],
+  "colsMap": {
+    "artTitle": {
+      "name": "artTitle",
+      "label": "標題",
+      "align": "left",
+      "__iconClass": "q-table__sort-icon q-table__sort-icon--left",
+      "__thClass": "text-left"
+    },
+    "description": {
+      "name": "description",
+      "label": "內容",
+      "align": "right",
+      "__iconClass": "q-table__sort-icon q-table__sort-icon--right",
+      "__thClass": "text-right"
+    },
+    "type": {
+      "name": "type",
+      "label": "主題類型",
+      "field": "type",
+      "align": "center",
+      "__iconClass": "q-table__sort-icon q-table__sort-icon--center",
+      "__thClass": "text-center"
+    },
+    "category": {
+      "name": "category",
+      "label": "分類",
+      "field": "category",
+      "align": "center",
+      "__iconClass": "q-table__sort-icon q-table__sort-icon--center",
+      "__thClass": "text-center"
+    },
+    "image": {
+      "name": "image",
+      "label": "封面照片",
+      "field": "image",
+      "align": "center",
+      "__iconClass": "q-table__sort-icon q-table__sort-icon--center",
+      "__thClass": "text-center"
+    },
+    "showing": {
+      "name": "showing",
+      "label": "狀態",
+      "field": "showing",
+      "align": "right",
+      "__iconClass": "q-table__sort-icon q-table__sort-icon--right",
+      "__thClass": "text-right"
+    },
+    "action": {
+      "name": "action",
+      "label": "編輯",
+      "field": "action",
+      "align": "center",
+      "__iconClass": "q-table__sort-icon q-table__sort-icon--center",
+      "__thClass": "text-center"
+    }
+  },
+  "rowIndex": 2,
+  "color": "grey-8",
+  "dark": false,
+  "dense": false,
+  "expand": false
+}

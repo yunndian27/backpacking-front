@@ -1,0 +1,81 @@
+//  setting
+#setting {
+  .container {
+    width: 100%;
+    padding: 0 1.8rem;
+  }
+
+  .menu-link {
+    color: #fff !important;
+    background: $primary;
+  }
+
+  .settingAll {
+    display: flex;
+    flex-direction: column-reverse;
+
+    .settingInfo {
+      width: 100%;
+    }
+
+    .settingSelect {
+      display: none;
+      width: 100%;
+    }
+
+    .settingSelectM {
+      border-color: $grey-5;
+
+      .selectButton {
+        padding: 3px 0;
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+  
+  .setTitle {
+    color: $secondary;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .button {
+    padding: 1px 18px;
+  }
+
+  // personalFile
+  // #personalFile {}
+
+  
+  // account
+  #account {
+    height: calc(100vh - 60px);
+    margin-bottom: -21px;
+  }
+}
+
+
+@media (min-width: $breakpoint-md) {
+  #setting {
+    .container{
+      width: 80%;
+      padding: 0;
+    }
+      .settingAll {
+        display: flex;
+        flex-direction: row;
+
+        .settingInfo {
+          width: 70%;
+        }
+        .settingSelect {
+          display: block;
+          width: 30%;
+        }
+        .settingSelectM {
+          display: none;
+      }
+    }
+  }
+}

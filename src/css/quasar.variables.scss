@@ -1,0 +1,49 @@
+// Quasar SCSS (& Sass) Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass/SCSS variables found in Quasar's source Sass/SCSS files.
+
+// Check documentation for full list of Quasar variables
+
+// Your own variables (that are declared here) and Quasar's own
+// ones will be available out of the box in your .vue/.scss/.sass files
+
+// It's highly recommended to change the default colors
+// to match your app's branding.
+// Tip: Use the "Theme Builder" on Quasar's documentation website.
+
+//  Breakpoint
+// $breakpoint-xs: 599px !default;
+// $breakpoint-sm: 1023px !default;
+// $breakpoint-md: 1439px !default;
+// $breakpoint-lg: 1919px !default;
+$breakpoint-xs: 460px !default;
+$breakpoint-sm: 576px !default;
+$breakpoint-md: 768px !default;
+$breakpoint-lg: 992px !default;
+$breakpoint-xl: 1200px !default;
+$breakpoint-xxl: 1400px !default;
+
+//  color
+// $primary   : #1976D2;
+// $secondary : #26A69A;
+// $accent    : #9C27B0;
+// $primary: #f50057;
+$primary: #e21b34 ;
+$secondary: #172a50;
+$accent: #65cadb;
+$fourth: #767d81;
+$dark: #1d1d1d;
+$positive: #21ba45;
+$negative: #c10015;
+$info: #31ccec;
+$warning: #f2c037;
+
+//  spacing
+$spacing: 1rem;
+
+// 文字大小
+$font-base-size: 16px;
+
+// line-height
+$line-height-level: 1.4;

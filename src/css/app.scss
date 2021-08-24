@@ -1,0 +1,62 @@
+// app global css in SCSS form
+@import "https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap";
+
+body {
+  // width: 100vw;
+  // background: #eee;
+  font-weight: 400;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+#section01,
+#section02,
+#section03,
+#section04,
+#section05,
+#section06,
+#section07 {
+  width: 100%;
+  margin-bottom: 2.5rem;
+}
+
+#section01 {
+  padding: 0;
+}
+
+#section07{
+  margin-bottom: 0;
+}
+
+.q-page-container {
+  #home {
+    padding-top: 0;
+  }
+}
+
+.container {
+  width: 80%;
+  height: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+// .nav {
+//   width: 100%;
+//   margin-right: 1.2rem;
+//   margin-left: 1.2rem;
+// }
+
+.q-carousel__next-arrow--horizontal {
+  right: 30px;
+}
+
+.q-carousel__prev-arrow--horizontal {
+  left: 30px;
+}
+
+.q-carousel__slide, .q-carousel .q-carousel--padding {
+  padding: 0;
+}
+
+@media (min-width: $breakpoint-md) {
+}
