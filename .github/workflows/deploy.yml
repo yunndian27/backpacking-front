@@ -20,7 +20,7 @@ jobs:
       - name: Install and Build
         run: |
           npm install
-          npm run build
+          quasar build
         env:
           VUE_APP_API: https://backpacking20210824.herokuapp.com
       # 步驟三：部署
