@@ -23,7 +23,7 @@ jobs:
           npm install
           quasar build
         env:
-          VUE_APP_API: https://backpacking20210824.herokuapp.com
+          VUE_APP_API: ${{ secrets.VUE_APP_API }}
       # 步驟三：部署
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.1
