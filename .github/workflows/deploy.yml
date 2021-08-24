@@ -19,6 +19,7 @@ jobs:
       # 步驟二：編譯
       - name: Install and Build
         run: |
+          npm install -g @quasar/cli
           npm install
           quasar build
         env:
