@@ -20,9 +20,6 @@
       </div>
       <div class="col-12 q-mb-md-sm">
         <div class="fourmType flex justify-center q-gutter-md">
-          <!-- <q-btn outline rounded color="primary" label="旅遊論壇" />
-          <q-btn outline rounded color="primary" label="同好論壇" />
-          <q-btn outline rounded color="primary" label="客棧論壇" /> -->
           <q-btn outline rounded color="primary" @click="type01" label="東北亞" />
           <q-btn outline rounded color="primary" @click="type02" label="東南亞" />
           <q-btn outline rounded color="primary" @click="type03" label="歐洲" />

@@ -21,6 +21,12 @@
     text-decoration: none;
     color: #333;
     line-height: 1.2rem;
+    .ellipsisTitle {
+      color: $secondary;
+    }
+    .text-subtitle2 {
+      color: $secondary;
+    }
   }
 
   .q-carousel {
@@ -232,8 +238,15 @@
     }
 
     a:hover {
-      color: $primary;
+      color: $grey-8;
+      .ellipsisTitle {
+        color: $primary;
+      }
+      .text-subtitle2 {
+        color: $primary;
+      }
     }
+
     #section01 {
       height: 350px;
       h2 {

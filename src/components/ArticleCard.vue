@@ -25,16 +25,27 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 .q-img {
   background: $grey-3;
 }
 .ellipsis {
+  height: 2.5rem;
+  max-width: 310px;
+  // padding: 0;
   overflow: hidden;
-  white-space: normal;
+  position: relative;
+  display: inline-block;
+  margin: 0 5px 0 5px;
+  text-decoration: none;
   text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
+  white-space: nowrap;
+  // overflow: hidden;
+  // white-space: normal;
+  // text-overflow: ellipsis;
+  // display: -webkit-box;
+  // -webkit-line-clamp: 2;
+  // -webkit-box-orient: vertical;
 }
 .ellipsisTitle{
   overflow: hidden;

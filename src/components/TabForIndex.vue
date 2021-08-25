@@ -2,7 +2,7 @@
 <div id="tabForIndex">
   <div class="mapAll">
     <div class="mapPic">
-        <q-img src="https://picsum.photos/600/400/?random=1" :ratio="4/3" />
+        <q-img src="../assets/map-unsplash.jpg" :ratio="16/9" />
     </div>
     <div class="mapList">
       <q-card>

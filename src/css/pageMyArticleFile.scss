@@ -1,8 +1,9 @@
 //  myFiles
 #myArticleFile {
   background: rgba($color: $secondary, $alpha: 0.15);
-
-  // #postEditor {
-  // }
+  .container {
+    min-height: calc(100vh - 2.8rem - 60px);
+  }
+  
 
 }

@@ -74,7 +74,7 @@
           ref="dialog"
           v-model="dialog"
           persistent
-          :title="form._id.length > 0 ? '編輯商品' : '新增商品'"
+          :title="form._id.length > 0 ? '編輯文章' : '新增文章'"
           :maximized="maximizedToggle"
           transition-show="slide-up"
           transition-hide="slide-down"
@@ -283,7 +283,7 @@ export default {
   name: 'myArticleFile',
   data () {
     return {
-      articles: [],
+      // articles: [],
       forums: [],
       columns: [
         {
@@ -310,19 +310,19 @@ export default {
           field: 'category',
           align: 'center'
         },
-        {
-          name: 'author',
-          label: '作者',
-          field: 'author',
-          align: 'center'
-        },
-        {
-          name: 'date',
-          label: '時間',
-          field: 'date',
-          align: 'center',
-          sortable: true
-        },
+        // {
+        //   name: 'author',
+        //   label: '作者',
+        //   field: 'author',
+        //   align: 'center'
+        // },
+        // {
+        //   name: 'date',
+        //   label: '時間',
+        //   field: 'date',
+        //   align: 'center',
+        //   sortable: true
+        // },
         {
           name: 'action',
           label: '編輯',
@@ -470,20 +470,18 @@ export default {
   },
   async mounted () {
     try {
-      const { data } = await this.$axios.get('/users/forums', {
-        headers: {
-          authorization: 'Bearer ' + this.$store.state.user.jwt.token
+      const { data } = await this.$axios.get('/articles')
+      this.articles = data.result.map(article => {
+        if (article.image) {
+          article.image = `${process.env.VUE_APP_API}/files/${article.image}`
         }
-      })
-      this.forums = data.result.forums.map(forum => {
-        forum.date = new Date(forum.date).toLocaleString()
-        return forum
+        return article
       })
     } catch (error) {
       console.log(error)
       this.$q.dialog({
         title: '錯誤',
-        message: '取得你的所有文章失敗',
+        message: '取得文章失敗',
         color: 'red-13',
         ok: true
       })
