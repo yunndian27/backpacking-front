@@ -2,8 +2,7 @@
 <div id="discount" class="flex justify-center">
   <!-- header -->
   <div class="discBanner q-mb-lg">
-    <div class="text-white text-center">image</div>
-    <!-- <img src="../assets/img-header-unsplash.jpg"> -->
+    <div class="discTitle">優惠折扣</div>
   </div>
 
   <!-- content -->

@@ -1,8 +1,7 @@
 <template>
 <div id="travelForum" class="flex justify-center">
   <div class="forumBanner q-mb-lg">
-    <div class="text-white text-center">image</div>
-    <!-- <img src="../assets/img-header-unsplash.jpg"> -->
+    <div class="forumTitle">旅遊論壇</div>
   </div>
   <div class="container">
     <div class="row flex justify-center q-mb-lg">
@@ -19,7 +18,7 @@
           </template>
         </q-input>
       </div>
-      <div class="col-12 q-mb-md">
+      <div class="col-12 q-mb-md-sm">
         <div class="fourmType flex justify-center q-gutter-md">
           <!-- <q-btn outline rounded color="primary" label="旅遊論壇" />
           <q-btn outline rounded color="primary" label="同好論壇" />
@@ -30,10 +29,6 @@
           <q-btn outline rounded color="primary" @click="type04" label="中國港澳" />
           <q-btn outline rounded color="primary" @click="type05" label="台灣" />
           <q-btn outline rounded color="primary" @click="type06" label="美洲" />
-        </div>
-      </div>
-      <div class="col-12">
-        <div class="fourmType flex justify-center q-gutter-md">
           <q-btn outline rounded color="primary" @click="type07" label="紐澳" />
           <q-btn outline rounded color="primary" @click="type08" label="太平洋諸島" />
           <q-btn outline rounded color="primary" @click="type09" label="南亞及西亞" />

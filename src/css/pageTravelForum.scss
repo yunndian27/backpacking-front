@@ -2,10 +2,36 @@
 #travelForum {
   .forumBanner {
     width: 100%;
-    height: 300px;
-    background: #123;
-    img {
+    height: 250px;
+    background: #123 url("../assets/travelforum-unsplash.jpg");
+    background-position: 55% 50%;
+
+    .forumTitle {
+      font-size: 2.4rem;
+      color: #fff;
+      text-shadow: 0 0 5px rgba($color: $secondary, $alpha: 0.3),0 0 12px rgba($color: $secondary, $alpha: 0.8),0 0 20px rgba($color: $secondary, $alpha: 0.3);
+      text-align: center;
+      line-height: 250px;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-md) {
+  #travelForum {
+    .forumBanner {
       width: 100%;
+      height: 300px;
+      background: #123 url("../assets/travelforum-unsplash.jpg");
+      background-position: 55% 50%;
+      overflow: hidden;
+  
+      .forumTitle {
+        font-size: 3rem;
+        color: #fff;
+        text-shadow: 0 0 5px rgba($color: $secondary, $alpha: 0.3),0 0 12px rgba($color: $secondary, $alpha: 0.8),0 0 20px rgba($color: $secondary, $alpha: 0.3);
+        text-align: center;
+        line-height: 300px;
+      }
     }
   }
 }

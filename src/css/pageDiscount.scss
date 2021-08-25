@@ -2,10 +2,16 @@
 #discount {
   .discBanner {
     width: 100%;
-    height: 300px;
-    background: #456;
-    img {
-      width: 100%;
+    height: 250px;
+    background: #456 url("../assets/discount-unsplash.jpg");
+    background-position: 55% 8%;
+
+    .discTitle{
+      font-size: 2.4rem;
+      color: #fff;
+      text-shadow: 0 0 5px rgba($color: $secondary, $alpha: 0.3),0 0 12px rgba($color: $secondary, $alpha: 0.8),0 0 20px rgba($color: $secondary, $alpha: 0.3);
+      text-align: center;
+      line-height: 250px;
     }
   }
   .content {
@@ -68,9 +74,13 @@
     .discBanner {
       width: 100%;
       height: 300px;
-      background: #456;
-      img {
-        width: 100%;
+      background: #456 url("../assets/discount-unsplash.jpg");
+      background-position: 55% 8%;
+
+      .discTitle{
+        font-size: 3rem;
+        text-align: center;
+        line-height: 300px;
       }
     }
     .container{
