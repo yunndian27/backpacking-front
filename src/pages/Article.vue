@@ -4,7 +4,7 @@
 
       <div class="row">
         <div class="col-12 q-mb-md">
-          <q-btn flat round color="primary" icon="arrow_back" class="text-grey" @click="beforePath" />
+          <q-btn flat round color="primary" icon="arrow_back" class="text-grey" to="/travelForum" />
         </div>
         <div class="col-12 q-mb-md">
           <div class="text-h3 q-mb-md">{{ artTitle }}</div>
@@ -67,11 +67,11 @@ export default {
       category: ''
     }
   },
-  methods: {
-    beforePath () {
-      this.$router.go(-1)
-    }
-  },
+  // methods: {
+  //   beforePath () {
+  //     this.$router.go(-1)
+  //   }
+  // },
   async mounted () {
     try {
       const { data } = await this.$axios.get('/articles/' + this.$route.params.id)

@@ -130,7 +130,13 @@
     </div>
   </div>
 
+  <!-- footer -->
+  <footer id="footer">
+    <div>&copy; 2021 泰山職訓局專題製作  </div>
+  </footer>
+
   </q-page>
+
 </template>
 
 <script>

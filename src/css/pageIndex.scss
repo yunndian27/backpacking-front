@@ -17,6 +17,16 @@ a {
   height: 100%;
 }
 
+#footer {
+  width: 100%;
+  height: 2.4rem;
+  background: $dark;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #section01 {
   h2 {
     font-size: 2rem;

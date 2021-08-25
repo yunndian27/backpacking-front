@@ -9,26 +9,22 @@
     <div class="row">
       <div class="col-6 q-pr-lg q-mb-md">
         <q-input
-                outlined
-                v-model="resForm.name"
-                label="您的名子 *"
-                hint="請輸入帳號或稱呼"
-                lazy-rules
-                :rules="[ val => val && val.length > 0 || 'Please type something']"
-              />
+          outlined
+          v-model="resForm.name"
+          label="您的名子 *"
+          hint="請輸入帳號或稱呼"
+          lazy-rules
+          :rules="[ val => val && val.length > 0 || '請輸入名子']"
+        />
       </div>
       <div class="col-6 q-mb-md">
         <q-input
-                outlined
-                type="number"
-                v-model="resForm.email"
-                label="信箱 *"
-                lazy-rules
-                :rules="[
-                  val => val !== null && val !== '' || '請輸入正確的信箱',
-                  val => val > 0 && val < 100 || '請輸入正確信箱'
-                ]"
-              />
+          outlined
+          v-model="resForm.email"
+          label="信箱 *"
+          lazy-rules
+          :rules="[val => !!val || '請輸入可使用的信箱', isValidEmail]"
+        />
       </div>
       <div class="col-8 q-pr-lg q-mb-md">
         <q-select outlined v-model="resForm.type" :options="optType" label="主題類型" />
@@ -73,15 +69,21 @@ export default {
         '中國港澳',
         '台灣',
         '美洲',
-        '紐澳及太平洋諸島',
+        '紐澳',
+        '太平洋諸島',
         '南亞',
         '非西',
-        '非洲'
+        '非洲',
+        '其他'
       ],
-      optCat: ['飲食', '住宿', '交通', '遊記', '景點', '金錢', '其他']
+      optCat: ['飲食', '住宿', '交通', '遊記', '景點', '金錢', '氣候', '其他']
     }
   },
   methods: {
+    isValidEmail (val) {
+      const emailPattern = /^(?=[a-zA-Z0-9@._%+-]{6,254}$)[a-zA-Z0-9._%+-]{1,64}@(?:[a-zA-Z0-9-]{1,63}\.){1,8}[a-zA-Z]{2,63}$/
+      return emailPattern.test(val) || '請確認信箱是否正確'
+    },
     onSubmit () {
       if (this.accept !== true) {
         this.$q.notify({
