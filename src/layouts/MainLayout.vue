@@ -183,8 +183,9 @@
       <router-view />
     </q-page-container>
 
-    <footer class="bg-dark text-white text-center">
-      <div>&copy; 2021 travelerform.com </div>
+    <!-- footer -->
+    <footer id="footer">
+      <div>&copy; 2021 泰山職訓局專題製作 by Wang Yunn Dian &emsp; | &emsp; 網站內的圖片來源自 Unsplash </div>
     </footer>
 
   </q-layout>
