@@ -58,7 +58,7 @@ export default {
 
 @media (min-width: $breakpoint-lg) {
   .ellipsis {
-      max-width: 150px;
+      max-width: 300px;
     }
 }
 
