@@ -35,16 +35,15 @@
                     <router-link :to="'/article/'+article._id">
                       <q-item-section >
                         <div class="oneArticle">
-                          <div class="oneArtCont col-xl-8">
+                          <div class="oneArtCont col-8">
                               <div class="pageType">{{ article.type }}</div>
                               <div class="pageTitle text-h6">{{ article.artTitle }}</div>
                               <p class="pageDesc ellipsis" v-html="article.description" />
                           </div>
-                          <div class="oneArtPic col-xl-4 flex items-center">
+                          <div class="oneArtPic col-4 flex items-center">
                             <q-img
                               :src="article.image"
                               :ratio="16/9"
-                              style="height: 120px"
                             />
                           </div>
                         </div>

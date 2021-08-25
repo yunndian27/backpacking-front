@@ -45,23 +45,17 @@
       .q-card {
         box-shadow: none;
       }
-      .ellipsis {
-        height: 2.5rem;
-        min-width: 300px;
-        padding: 0;
-        overflow: hidden;
-        position: relative;
-        display: inline-block;
-        margin: 0 5px 0 5px;
-        text-decoration: none;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        // overflow: hidden;
-        // white-space: normal;
-        // text-overflow: ellipsis;
-        // display: -webkit-box;
-        // -webkit-line-clamp: 2;
-        // -webkit-box-orient: vertical;
+
+      .oneArticle {
+        padding: 0 .8rem;
+        
+        .ellipsis {
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          padding-right: 2rem;
+        }
       }
 
       .tabInfo {
