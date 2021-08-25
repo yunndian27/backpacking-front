@@ -35,6 +35,8 @@ export default {
     padding: 0 1rem;
 
     .ellipsis {
+      min-width: 200px;
+      height: 2.4rem;
       display: -webkit-box;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
@@ -52,6 +54,18 @@ export default {
     -webkit-box-orient: vertical;
   }
 
+}
+
+@media (min-width: $breakpoint-lg) {
+  .ellipsis {
+      max-width: 150px;
+    }
+}
+
+@media (min-width: $breakpoint-xl) {
+  .ellipsis {
+      min-width: 230px;
+    }
 }
 
 </style>

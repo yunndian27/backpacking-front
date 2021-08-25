@@ -44,6 +44,7 @@
                             <q-img
                               :src="article.image"
                               :ratio="16/9"
+                              style="height: 180px"
                             />
                           </div>
                         </div>

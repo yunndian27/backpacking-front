@@ -180,7 +180,9 @@
     </q-header>
 
     <q-page-container>
-      <router-view />
+      <vue-page-transition name="fade-in-down">
+        <router-view />
+      </vue-page-transition>
     </q-page-container>
 
     <!-- footer -->

@@ -50,6 +50,8 @@
         padding: 0 .8rem;
         
         .ellipsis {
+          min-width: 120px;
+          height: 2.6rem;
           display: -webkit-box;
           -webkit-line-clamp: 2;
           -webkit-box-orient: vertical;

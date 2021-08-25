@@ -169,6 +169,8 @@
 
     .ellipsis{
       color: $grey-8;
+      min-width: 250px;
+      height: 2.4rem;
       overflow: hidden;
       white-space: normal;
       text-overflow: ellipsis;

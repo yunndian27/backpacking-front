@@ -24,7 +24,8 @@ module.exports = function (/* ctx */) {
       'validator',
       'mixin',
       'ImgInputer',
-      'vuegtag'
+      'vuegtag',
+      'vuepagetransition.js'
     ],
 
     // https://v1.quasar.dev/quasar-cli/quasar-conf-js#Property%3A-css
