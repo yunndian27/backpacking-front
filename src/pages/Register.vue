@@ -140,8 +140,8 @@ export default {
       } catch (error) {
         console.log(error)
         this.$q.dialog({
-          title: '註冊失敗',
-          message: '再試一次',
+          title: '失敗',
+          message: '註冊失敗',
           color: 'red-13',
           ok: true
         })
