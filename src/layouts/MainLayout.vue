@@ -1,6 +1,6 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header id="navbar" elevated class="bg-white text-secondary flex " >
+    <q-header id="navbar" bordered class="bg-white text-secondary flex " >
       <q-toolbar class="flex">
         <!-- pc版 -->
         <div class="nav-pc">
