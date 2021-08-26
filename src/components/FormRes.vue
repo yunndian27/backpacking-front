@@ -11,10 +11,10 @@
         <q-input
           outlined
           v-model="resForm.name"
-          label="您的名子 *"
+          label="您的名字 *"
           hint="請輸入帳號或稱呼"
           lazy-rules
-          :rules="[ val => val && val.length > 0 || '請輸入名子']"
+          :rules="[ val => val && val.length > 0 || '請輸入名字']"
         />
       </div>
       <div class="col-6 q-mb-md">
@@ -85,21 +85,12 @@ export default {
       return emailPattern.test(val) || '請確認信箱是否正確'
     },
     onSubmit () {
-      if (this.accept !== true) {
-        this.$q.notify({
-          color: 'red-5',
-          textColor: 'white',
-          icon: 'warning',
-          message: 'You need to accept the license and terms first'
-        })
-      } else {
-        this.$q.notify({
-          color: 'green-4',
-          textColor: 'white',
-          icon: 'cloud_done',
-          message: 'Submitted'
-        })
-      }
+      this.$q.notify({
+        color: 'green-4',
+        textColor: 'white',
+        icon: 'cloud_done',
+        message: 'Submitted'
+      })
     },
 
     onReset () {
